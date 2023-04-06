@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+body{
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(0, 0, 0, 0.308);
+}
+
+.center {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+}
+
+#drum-machine{
+    box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.75);
+    background-color: aliceblue;
+}
+
+#display{
+    padding: 0.5rem 1rem;
+}
+
+.sub-display{
+    border: 2px solid rgba(0, 0, 0, 0.308);
+    max-width: 40%;
+    margin: 0.5rem auto 0 auto;
+}
+
+.drum-pads-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.drum-pad{
+    border: 2px solid rgba(0, 0, 0, 0.308);
+    margin: 1rem 0;
+    padding: 0 0.8rem;
+    cursor: pointer;
+}
+
+@media(min-width: 600px){
+    .drum-pads-container{
+        gap: 1rem;
+    }
+    .drum-pad{
+        padding: 0 1rem;
+    }
+}
